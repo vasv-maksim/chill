@@ -1,1 +1,104 @@
+.flex {
+  display: flex;
+}
+
+// .column .row
+@mixin direction() {
+  $direction: (
+    column: column,
+    row: row,
+  );
+
+  @each $key, $value in $direction {
+    .#{$key} {
+      flex-direction: $value;
+    }
+  }
+}
+@include direction();
+
+// .wrap .nowrap
+@mixin wrap() {
+  $wrap: (
+    wrap: wrap,
+    nowrap: nowrap,
+  );
+
+  @each $key, $value in $wrap {
+    .#{$key} {
+      flex-wrap: $value;
+    }
+  }
+
+}
+@include wrap();
+
+// .justify-between
+@mixin justify() {
+  $justify: (
+    start: flex-start,
+    center: center,
+    end: flex-end,
+    between: space-between,
+    around: space-around,
+    evenly: space-evenly,
+  );
+
+  .justify {
+    @each $key, $value in $justify {
+      &-#{$key} {
+        justify-content: $value ;
+      }
+    }
+  }
+}
+@include justify();
+
+// .align-center
+@mixin align() {
+  $align-items: (
+    start: flex-start,
+    center: center,
+    end: flex-end,
+    baseline: baseline,
+    stretch: stretch,
+  );
+
+  .align {
+    @each $key, $value in $align-items {
+      &-#{$key} {
+        align-items: $value;
+      }
+    }
+  }
+}
+@include align();
+
+// .align-self-center
+@mixin align-self() {
+  $align-self: (
+    start: start,
+    center: center,
+    end: end,
+    baseline: baseline,
+    stretch: stretch,
+  );
+
+  .align-self {
+    @each $key, $value in $align-self {
+      &-#{$key} {
+        align-self: $value;
+      }
+    }
+  }
+}
+@include align-self();
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-order-1 {
+  order: 1;
+}
 

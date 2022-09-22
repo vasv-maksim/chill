@@ -1,0 +1,36 @@
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+
+// @mixin wrap($padding) {
+//   .wrap {
+//     padding: $padding;
+//     margin: 0;
+//     box-sizing: border-box;
+//   }
+// }
+
+// @include wrap(8px 8px);
+
+// @media (min-width: 576px) {
+//   @include wrap(8px 8px);
+// }
+
+// @media (min-width: 768px) {
+//   @include wrap(8px 12px);
+// }
+
+// @media (min-width: 992px) {
+//   @include wrap(8px 24px);
+// }
+
+// @media (min-width: 1200px) {
+//   @include wrap(8px 24px);
+// }
+

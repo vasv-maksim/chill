@@ -1,0 +1,34 @@
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+
+@mixin non-display($postfix) {
+  .non-display#{$postfix} {
+    display: none;
+  }
+}
+
+@include non-display('');
+
+@media (min-width: 576px) {
+  @include non-display('-sm');
+}
+
+@media (min-width: 768px) {
+  @include non-display('-md');
+}
+
+@media (min-width: 992px) {
+  @include non-display('-lg');
+}
+
+@media (min-width: 1200px) {
+  @include non-display('-xl');
+}
+
+
