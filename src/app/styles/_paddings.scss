@@ -1,0 +1,25 @@
+@mixin paddings() {
+  @for $item from 0 through 25 {
+    .p-#{$item*4} {
+      padding: #{$item*4}px;
+    }
+
+    .pt-#{$item*4} {
+      padding-top: #{$item*4}px;
+    }
+
+    .pl-#{$item*4} {
+      padding-left: #{$item*4}px;
+    }
+
+    .pb-#{$item*4} {
+      padding-bottom: #{$item*4}px;
+    }
+
+    .pr-#{$item*4} {
+      padding-right: #{$item*4}px;
+    }
+  }
+}
+
+@include paddings();

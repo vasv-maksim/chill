@@ -1,0 +1,25 @@
+@mixin margins() {
+  @for $item from 0 through 25 {
+    .m-#{$item*4} {
+      margin: #{$item*4}px;
+    }
+
+    .mt-#{$item*4} {
+      margin-top: #{$item*4}px;
+    }
+
+    .ml-#{$item*4} {
+      margin-left: #{$item*4}px;
+    }
+
+    .mb-#{$item*4} {
+      margin-bottom: #{$item*4}px;
+    }
+
+    .mr-#{$item*4} {
+      margin-right: #{$item*4}px;
+    }
+  }
+}
+
+@include margins();

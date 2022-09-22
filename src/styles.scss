@@ -1,0 +1,19 @@
+@import 'src/app/styles/normalize.scss';
+@import 'src/app/styles/margins.scss';
+@import 'src/app/styles/paddings.scss';
+@import 'src/app/styles/fonts.scss';
+@import 'src/app/styles/colors.scss';
+@import 'src/app/styles/grid.scss';
+@import 'src/app/styles/flex.scss';
+@import 'src/app/styles/headers.scss';
+@import 'src/app/styles/wrappers.scss';
+@import 'src/app/styles/typography.scss';
+@import 'src/app/styles/hidden.scss';
+@import 'src/app/styles/blocks.scss';
+@import 'src/app/styles/other.scss';
+
+.bcg {
+  background-color: red;
+  width: 300px;
+  height: 200px;
+}

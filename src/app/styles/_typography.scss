@@ -1,0 +1,31 @@
+.text, .text-gray, link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.text {
+  color: black;
+}
+
+.text-gray {
+
+}
+
+.link {
+  color: blue !important;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+    color: aqua;
+  }
+}
+
+.bold {
+  font-weight: 700 !important;
+}
+
+small {
+  font-size: 14px !important;
+}
+
